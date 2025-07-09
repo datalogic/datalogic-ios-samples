@@ -1,0 +1,41 @@
+# === Build artifacts ===
+build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+
+# === Swift Package Manager ===
+.build/
+.swiftpm/
+Package.resolved
+
+# === Xcode ===
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+*.xcodeproj/xcuserdata/
+
+*.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+
+# === User-specific and temporary files ===
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.log
+
+# === macOS metadata ===
+.DS_Store
+
+# === Playgrounds ===
+timeline.xctimeline
+playground.xcworkspace
+
+# === Editor directories ===
+.idea/
+.vscode/
+
+# === Archives ===
+*.xcarchive
