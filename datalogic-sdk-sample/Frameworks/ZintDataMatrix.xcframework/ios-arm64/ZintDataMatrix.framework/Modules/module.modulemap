@@ -1,0 +1,6 @@
+framework module ZintDataMatrix {
+  umbrella header "ZintDataMatrix.h"
+  export *
+
+  module * { export * }
+}

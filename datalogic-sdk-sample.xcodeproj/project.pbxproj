@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E9B21262E1D7C000084946B /* DatalogicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9B21252E1D7C000084946B /* DatalogicSDK */; };
-		4E9B22692E1E68240084946B /* DatalogicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4E9B22682E1E68240084946B /* DatalogicSDK */; };
+		4EAE971E2E1E73F400AFB4C0 /* DatalogicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4EAE971D2E1E73F400AFB4C0 /* DatalogicSDK */; };
+		4EAE97272E1E777C00AFB4C0 /* DatalogicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4EAE97262E1E777C00AFB4C0 /* DatalogicSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +29,25 @@
 		4E52F8F72E1C0577007FB061 /* datalogic-sdk-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "datalogic-sdk-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		4EAE97232E1E745D00AFB4C0 /* Exceptions for "datalogic-sdk-sample" folder in "Embed Frameworks" phase from "datalogic-sdk-sample" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				Frameworks/ZintDataMatrix.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = 4E9B21222E1D7A350084946B /* Embed Frameworks */;
+			membershipExceptions = (
+				Frameworks/ZintDataMatrix.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4E52F8F92E1C0577007FB061 /* datalogic-sdk-sample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4EAE97232E1E745D00AFB4C0 /* Exceptions for "datalogic-sdk-sample" folder in "Embed Frameworks" phase from "datalogic-sdk-sample" target */,
+			);
 			path = "datalogic-sdk-sample";
 			sourceTree = "<group>";
 		};
@@ -41,7 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9B22692E1E68240084946B /* DatalogicSDK in Frameworks */,
+				4EAE971E2E1E73F400AFB4C0 /* DatalogicSDK in Frameworks */,
+				4EAE97272E1E777C00AFB4C0 /* DatalogicSDK in Frameworks */,
 				4E9B21262E1D7C000084946B /* DatalogicSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +105,8 @@
 			name = "datalogic-sdk-sample";
 			packageProductDependencies = (
 				4E9B21252E1D7C000084946B /* DatalogicSDK */,
-				4E9B22682E1E68240084946B /* DatalogicSDK */,
+				4EAE971D2E1E73F400AFB4C0 /* DatalogicSDK */,
+				4EAE97262E1E777C00AFB4C0 /* DatalogicSDK */,
 			);
 			productName = "datalogic-sdk-sample";
 			productReference = 4E52F8F72E1C0577007FB061 /* datalogic-sdk-sample.app */;
@@ -118,7 +137,7 @@
 			mainGroup = 4E52F8EE2E1C0577007FB061;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				4E9B22672E1E68240084946B /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */,
+				4EAE97252E1E777C00AFB4C0 /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4E52F8F82E1C0577007FB061 /* Products */;
@@ -273,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "datalogic-sdk-sample/datalogic_sdk_sample.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -301,6 +320,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.datalogic.codiscan-sdk-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -318,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "datalogic-sdk-sample/datalogic_sdk_sample.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -346,6 +366,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.datalogic.codiscan-sdk-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -381,7 +402,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4E9B22672E1E68240084946B /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */ = {
+		4EAE97252E1E777C00AFB4C0 /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/datalogic/datalogic-ios-sdk";
 			requirement = {
@@ -396,9 +417,13 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = DatalogicSDK;
 		};
-		4E9B22682E1E68240084946B /* DatalogicSDK */ = {
+		4EAE971D2E1E73F400AFB4C0 /* DatalogicSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E9B22672E1E68240084946B /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */;
+			productName = DatalogicSDK;
+		};
+		4EAE97262E1E777C00AFB4C0 /* DatalogicSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EAE97252E1E777C00AFB4C0 /* XCRemoteSwiftPackageReference "datalogic-ios-sdk" */;
 			productName = DatalogicSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
