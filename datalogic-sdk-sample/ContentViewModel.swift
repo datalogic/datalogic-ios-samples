@@ -26,7 +26,6 @@ class ContentViewModel: ObservableObject, DeviceManagerDelegate {
     @Published var showDisconnectionAlert: Bool = false
     @Published var showUnlinkAlertName: String? = nil
     @Published var showUnlinkAlert: Bool = false
-    @Published var showError: Error? = nil
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Published var timeRemaining = 60
 
@@ -206,8 +205,6 @@ class ContentViewModel: ObservableObject, DeviceManagerDelegate {
                 (error as NSError).code == 14 {
                 self.showUnlinkAlertName = name
                 self.showUnlinkAlert = true
-            } else {
-                self.showError = error
             }
         }
     }

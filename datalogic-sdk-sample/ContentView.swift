@@ -78,10 +78,6 @@ struct ContentView: View {
             } else {
                 Text("Status: Disconnected")
             }
-            if let error = viewModel.showError {
-                Text("Error: \(error.localizedDescription)")
-                    .foregroundStyle(.red)
-            }
         }
     }
     
