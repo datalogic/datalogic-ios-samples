@@ -202,9 +202,13 @@ struct ContentView: View {
                 showConfigSheet.toggle()
             })
             .buttonStyle(CustomButtonStyle(onPressed: {}, onReleased: {}))
+            .disabled(!viewModel.isConnected)
+                        .opacity(viewModel.isConnected ? 1 : 0.5)
             Button("Restore default config",
                    action: { viewModel.applyDefaultConfig() })
             .buttonStyle(CustomButtonStyle(onPressed: {}, onReleased: {}))
+            .disabled(!viewModel.isConnected)
+                        .opacity(viewModel.isConnected ? 1 : 0.5)
             Spacer()
         }
     }
